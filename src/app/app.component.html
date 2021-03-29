@@ -1,0 +1,114 @@
+<h1>Inch To Cm Converter</h1>
+<div>
+  <label>inch </label>
+  <input name="inch" type="text" (keyup)="convertToCm()" [(ngModel)]="inch"/>
+  <span> = </span>
+  <label>cm </label>
+  <input name="cm" type="text" (keyup)="convertToInch()" [(ngModel)]="cm"/>
+  <div class="option-border">
+    <p>Options</p>
+    <label><input type="checkbox" (change)="toggleFraction()" [(ngModel)]="fractionUsed"/> Use Fractions </label>
+    <label class="mr-15">Base </label>
+    <select (change)="convertToInch()" [(ngModel)]="base">
+      <option value="4">4</option>
+      <option value="8">8</option>
+      <option value="16">16</option>
+      <option value="32">32</option>
+    </select><br>
+    <label><input type="checkbox" (change)="simplifiedFraction()" [(ngModel)]="simplified"/> Simplified </label>
+  </div>
+  <h2>Fraction to Decimal Chart</h2>
+  <table>
+    <thead>
+    <tr>
+      <th>Fraction (in)</th>
+      <th>Decimal (in)</th>
+      <th>Metric (cm)</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>1/16''</td>
+      <td>0.0625''</td>
+      <td>0.1588 cm</td>
+    </tr>
+    <tr>
+      <td>2/16'' = 1/8''</td>
+      <td>0.125''</td>
+      <td>0.3175 cm</td>
+    </tr>
+    <tr>
+      <td>3/16''</td>
+      <td>0.1875''</td>
+      <td>0.4763 cm</td>
+    </tr>
+    <tr>
+      <td>4/16'' = 1/4''</td>
+      <td>0.25''</td>
+      <td>0.635 cm</td>
+    </tr>
+    <tr>
+      <td>5/16''</td>
+      <td>0.3125''</td>
+      <td>0.7938 cm</td>
+    </tr>
+    <tr>
+      <td>6/16'' = 3/8''</td>
+      <td>0.375''</td>
+      <td>0.9525 cm</td>
+    </tr>
+    <tr>
+      <td>7/16''</td>
+      <td>0.4375''</td>
+      <td>1.1113 cm</td>
+    </tr>
+    <tr>
+      <td>8/16'' = 1/2''</td>
+      <td>0.5''</td>
+      <td>1.27 cm</td>
+    </tr>
+    <tr>
+      <td>9/16''</td>
+      <td>0.5625''</td>
+      <td>1.4288 cm</td>
+    </tr>
+    <tr>
+      <td>10/16'' = 5/8''</td>
+      <td>0.625''</td>
+      <td>1.5875 cm</td>
+    </tr>
+    <tr>
+      <td>11/16''</td>
+      <td>0.6875''</td>
+      <td>1.7463 cm</td>
+    </tr>
+    <tr>
+      <td>12/16'' = 3/4''</td>
+      <td>0.75''</td>
+      <td>1.905 cm</td>
+    </tr>
+    <tr>
+      <td>13/16''</td>
+      <td>0.8125''</td>
+      <td>2.0638 cm</td>
+    </tr>
+    <tr>
+      <td>14/16'' = 7/8''</td>
+      <td>0.875''</td>
+      <td>2.2225 cm</td>
+    </tr>
+    <tr>
+      <td>15/16''</td>
+      <td>0.9375''</td>
+      <td>2.3813 cm</td>
+    </tr>
+    <tr>
+      <td>16/16'' = 1''</td>
+      <td>1.0''</td>
+      <td>2.54 cm</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
